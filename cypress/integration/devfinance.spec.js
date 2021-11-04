@@ -25,10 +25,3 @@
 
     });
 });       
-
-
-
-
-/// usar hooks
-    /// beforeEach(() =>  {
-    /// cy.visit("site")
