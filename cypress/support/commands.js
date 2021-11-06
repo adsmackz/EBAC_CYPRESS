@@ -23,3 +23,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("dados", cadastro => {
+  cy.get('#first-name').type(cadastro.firstName); 
+  cy.get('#last-name').type(cadastro.lastName);
+  cy.get('#email').type(cadastro.email)
+    
+});
